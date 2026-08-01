@@ -57,8 +57,11 @@ git clone https://github.com/DaveKJohn/specialists-adoptietest.git
 Wat je weggooit is v10's ongecommitte teardown-staat en de twee `CLAUDE.md`-regels die als bewijs voor #331
 bewaard waren. **Dat bewijs is opgebruikt:** #331 is gerepareerd en deze ronde hertest hem bij B2.
 
-**Let op:** je kloont `main`. Deze map (`tests/v11/`) staat op een aparte branch en komt dus **niet** mee in
-de werkkopie — dat is de bedoeling, zie de uitleg in `README.md`.
+**Let op: je kloont `main`, en je haalt deze map er niet bij.** `tests/v11/` staat op een aparte branch en
+komt dus **niet** mee in de werkkopie — dat is de bedoeling. Doe géén `git checkout tests/v11` in de repo die
+je test: dan staan de papieren in je werkkopie en vindt de teardown-audit van stap B2 daar tientallen
+verwijzingen naar de plugin die niets met de adoptie te maken hebben. Lees de opdracht in de browser of in een
+**tweede clone** — zie [`README.md`](README.md) onder *"Waar je de ronde draait, en waar je dit leest"*.
 
 **Daarna de administratie leegmaken en stap 0 bewijzen.** Alle zes moeten **afwezig** zijn; is er één
 aanwezig, dan meet je geen verse consument en is **dát je eerste bevinding**. Meet in een kale PowerShell,

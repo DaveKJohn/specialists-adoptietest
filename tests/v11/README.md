@@ -16,8 +16,37 @@ uit hoe er gemeten wordt.
 > een van de zeventien reparaties moet verifiëren. Dus: `main` blijft maagdelijk, deze branch draagt de
 > papieren.
 >
-> Praktisch: je kloont `main` om de ronde te draaien, en leest deze map op GitHub of via
-> `git checkout tests/v11` in een tweede map.
+## Waar je de ronde draait, en waar je dit leest
+
+**Je draait de ronde op `main`.** Dat is de repo onder test: je kloont hem, adopteert hem, en breekt hem
+daarna af. Deze map is alleen papier.
+
+**Doe dit NIET.** Het is de meest natuurlijke handeling en hij vervuilt precies wat de aparte branch moet
+beschermen — `tests/v11/` staat dan ineens in de werkkopie die je aan het meten bent, en de teardown-audit van
+stap B2 vindt daar tientallen verwijzingen naar de plugin die niets met de adoptie te maken hebben:
+
+```powershell
+cd specialists-adoptietest
+git checkout tests/v11    # FOUT -- dit haalt de papieren in de geteste repo
+```
+
+**Doe dit wel** — twee losse werkkopieën, of lees mee in de browser:
+
+```powershell
+# 1. de repo die je test
+git clone https://github.com/DaveKJohn/specialists-adoptietest.git
+
+# 2. de papieren, in een EIGEN map ernaast
+git clone -b tests/v11 https://github.com/DaveKJohn/specialists-adoptietest.git v11-opdracht
+```
+
+Of gewoon op GitHub: `tests/v11` op de branch `tests/v11`.
+
+> **Deze alinea is zelf een klasse-3-bevinding geweest**, en hij staat er daarom uitgeschreven. De eerste
+> versie zei *"lees deze map op GitHub of via `git checkout tests/v11` in een tweede map"* — dubbelzinnig, want
+> een `checkout` in een tweede map bestaat niet als handeling, en de meest natuurlijke lezing is precies de
+> foute. Dave stelde de vraag *"ik start de opdracht wel op `main` toch?"* voordat er iets misging. Dat is
+> exact de klasse die deze rondes meten: de informatie stond er, en toch kon je hem verkeerd lezen.
 
 > **De `README.md` op `main` zegt nog "voor testronde v10".** Dat is bewust niet aangepast: v10 heeft de
 > bytegrootte van dat bestand als ijkpunt vastgelegd, en die veranderen kost de vergelijking met v10.
