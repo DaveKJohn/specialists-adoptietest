@@ -1,2 +1,22 @@
 # specialists-adoptietest
-Wegwerp-consument voor testronde v10 van de specialisten-plugin. Vers, leeg, geen .claude/.
+
+Wegwerp-consument voor de testrondes van de specialisten-plugin. Vers, leeg, geen `.claude/`.
+
+## Draai je hier een testronde?
+
+**De opdracht staat niet in deze branch, en dat is bewust.** Deze branch is de *fixture*: hij moet leeg zijn,
+want stap 0 van elke ronde bewijst dat er niets is om correct over te zijn.
+
+De opdracht, de richtlijnen en het resultaatformulier van de huidige ronde staan op branch **`tests/v11`**, in
+de map `tests/v11/`. Begin bij `tests/v11/README.md`.
+
+**Lees ze in de browser, of clone die branch in een EIGEN map.** Doe géén `git checkout tests/v11` hier: dan
+staan de papieren in de repo die je aan het meten bent.
+
+```
+git clone -b tests/v11 https://github.com/DaveKJohn/specialists-adoptietest.git v11-opdracht
+```
+
+> Deze sectie is de enige inhoudelijke toevoeging aan de fixture, en ze is opzettelijk kort en naamloos: geen
+> specialist-id, geen specialistennaam, geen contract-functie. De vrij-staande audit van de teardown scant
+> `CLAUDE.md`, `.claude/**` en `scripts/**` — deze README valt daarbuiten en wordt alleen geteld als prose.
