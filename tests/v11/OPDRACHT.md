@@ -59,9 +59,20 @@ bewaard waren. **Dat bewijs is opgebruikt:** #331 is gerepareerd en deze ronde h
 
 **Let op: je kloont `main`, en je haalt deze map er niet bij.** `tests/v11/` staat op een aparte branch en
 komt dus **niet** mee in de werkkopie — dat is de bedoeling. Doe géén `git checkout tests/v11` in de repo die
-je test: dan staan de papieren in je werkkopie en vindt de teardown-audit van stap B2 daar tientallen
-verwijzingen naar de plugin die niets met de adoptie te maken hebben. Lees de opdracht in de browser of in een
-**tweede clone** — zie [`README.md`](README.md) onder *"Waar je de ronde draait, en waar je dit leest"*.
+je test: dan staan de papieren in je werkkopie. Lees de opdracht in de browser of in een **tweede clone** —
+zie [`README.md`](README.md) onder *"Waar je de ronde draait, en waar je dit leest"*.
+
+> **De nulstand van deze repo is niet identiek aan die van v10, en dat is bewust.** v10 mat één commit met een
+> `README.md` van **120 bytes / 2 regels**. Er staat nu een **tweede commit** en de README is **1105 bytes /
+> 15 regels**: een korte verwijzing naar deze opdracht, zodat een sessie die in de geklonede repo begint niet
+> hoeft te zoeken. Noteer die getallen als jouw ijkpunt en lees ze **niet** als restant van een vorige ronde —
+> dat is precies de fout die v9 zijn nulstandtabel kostte.
+>
+> Die verwijzing is opzettelijk kort en naamloos: **geen specialist-id, geen specialistennaam, geen
+> contract-functie** (nageteld: 0 van elk). De vrij-staande audit van stap B2 scant `CLAUDE.md`, `.claude/**`
+> en `scripts/**`, en het script zegt zelf dat andere prose zoals `README.md` daarbuiten valt en alleen
+> **geteld** wordt in plaats van als werk-item gelijst. **Controleer dat bij B2**: als die README wél als
+> werk-item opduikt, is dát een bevinding — dan is de scope van de audit anders dan het script beweert.
 
 **Daarna de administratie leegmaken en stap 0 bewijzen.** Alle zes moeten **afwezig** zijn; is er één
 aanwezig, dan meet je geen verse consument en is **dát je eerste bevinding**. Meet in een kale PowerShell,

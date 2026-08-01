@@ -14,6 +14,7 @@ Vul dit **eerst** in, vóór test A. v9 verloor zijn hele nulstandtabel omdat di
 | Profiel | `davek_onn` — administratie: `C:\Users\davek_onn\.claude\` |
 | Volledig pad `installed_plugins.json` | |
 | Doelrepo + commit van de verse checkout | `DaveKJohn/specialists-adoptietest` @ |
+| README.md — bytes / regels | verwacht **1105 / 15** (v10: 120 / 2, zie de noot bij stap 0b) — gemeten: |
 | `plugin.json` versie | verwacht **3.1.0** — gemeten: |
 | `gitCommitSha` uit het record | |
 | Gelijk aan de `v3.1.0`-tag? | verwacht **ja** (`main` en de tag waren `6feac75` toen deze opdracht werd geschreven) — gemeten: |
