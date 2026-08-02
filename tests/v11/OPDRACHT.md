@@ -63,10 +63,29 @@ je test: dan staan de papieren in je werkkopie. Lees de opdracht in de browser o
 zie [`README.md`](README.md) onder *"Waar je de ronde draait, en waar je dit leest"*.
 
 > **De nulstand van deze repo is niet identiek aan die van v10, en dat is bewust.** v10 mat één commit met een
-> `README.md` van **120 bytes / 2 regels**. Er staat nu een **tweede commit** en de README is **1105 bytes /
-> 15 regels**: een korte verwijzing naar deze opdracht, zodat een sessie die in de geklonede repo begint niet
-> hoeft te zoeken. Noteer die getallen als jouw ijkpunt en lees ze **niet** als restant van een vorige ronde —
-> dat is precies de fout die v9 zijn nulstandtabel kostte.
+> `README.md` van **120 bytes / 2 regels**. Er staat nu een **tweede commit** en de README is groter: een korte
+> verwijzing naar deze opdracht, zodat een sessie die in de geklonede repo begint niet hoeft te zoeken. Noteer
+> die getallen als jouw ijkpunt en lees ze **niet** als restant van een vorige ronde — dat is precies de fout
+> die v9 zijn nulstandtabel kostte.
+>
+> | maat | waarde | hoe gemeten |
+> |---|---|---|
+> | grootte, repo-zijde | **1105 bytes** | de git-blob, dus met LF |
+> | grootte, op schijf (Windows) | **1127 bytes** | `core.autocrlf=true` maakt van 22 LF's een CRLF |
+> | regels | **23** | alle regels |
+> | regels volgens `Measure-Object -Line` | **15** | die cmdlet slaat lege regels over |
+>
+> **Een bytegetal zonder zijn line-ending-conventie is geen ijkpunt** (inbound
+> [#360](https://github.com/DaveKJohn/davekjohns-workshop/issues/360)). Tot 2 augustus 2026 stond hier alleen
+> `1105 bytes / 15 regels`, zonder te zeggen welke van de twee maten dat waren — terwijl elke ronde tot nu toe
+> op Windows is gedraaid, waar de werkkopie 1127 meet. De alinea zegt je nadrukkelijk een afwijkend getal
+> **niet** weg te verklaren, en gaf je vervolgens een getal dat op jouw platform niet kán kloppen. Dat is geen
+> ontbrekende informatie maar misleidende: alles stond er, en een zorgvuldige lezer kwam er verkeerd uit.
+>
+> **Voor wie v12 schrijft:** noem bij elk ijkpunt hoe het gemeten is, of geef de git-blob-grootte en zeg dat
+> erbij. Hetzelfde geldt voor een geciteerde CLI-melding (die is versiegebonden) en voor een voorbeeld-output
+> van een script (die is gebonden aan de toestand van de repo waarin hij is opgenomen) — drie verschijningen
+> van één klasse, alle drie gevonden in v11.
 >
 > Die verwijzing is opzettelijk kort en naamloos: **geen specialist-id, geen specialistennaam, geen
 > contract-functie** (nageteld: 0 van elk). De vrij-staande audit van stap B2 scant `CLAUDE.md`, `.claude/**`
