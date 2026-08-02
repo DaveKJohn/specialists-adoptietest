@@ -121,17 +121,21 @@ het script eronder.
 3. **De stappentabel**, naast die van v10, v11 en v12 — dat is het enige dat laat zien of het pad
    *begaanbaarder* is geworden in plaats van alleen anders.
 
-En daarna: de uitkomst vastleggen in het dossier in `life-hub`
-(`Brains/plutchik-brain/RAW/feiten/dossiers/testronde-specialisten/README.md`), via branch + PR. Dat dossier
-is de canonieke plek voor de historie van de reeks; deze map is de werkmap van deze ene ronde.
+**Deze werkmap is de canonieke plek van de ronde.** [`RESULTATEN.md`](RESULTATEN.md) hiernaast *is* het
+verslag: er gaat achteraf geen tweede versie van naar een dossier elders. Besluit van Dave, 2 augustus 2026.
 
-> **Let op: die slotstap is bij v11 én v12 overgeslagen.** Het dossier staat op 1 augustus 2026 stil — status
-> *"v10 uitgevoerd, v11 staat klaar"* — terwijl v11 en v12 daarna volledig gedraaid en verwerkt zijn. De
-> historie van de reeks is daarmee twee rondes achter, en dat is precies het soort stille half-toestand
-> waarvoor deze rondes bestaan. Twee wegen, en het is een keuze: het dossier bijwerken tot en met v13, óf het
-> protocol wijzigen zodat deze werkmap de canonieke plek is en het dossier alleen nog verwijst. Wat je niet
-> moet doen is het laten staan zoals het staat, want dan leest een volgende ronde een beginstand van drie
-> rondes terug — de fout die v9 zijn nulstandtabel kostte.
+> **Waarom dat besluit er is, want het is een wijziging.** Tot en met v10 was het dossier in `life-hub`
+> (`Brains/plutchik-brain/RAW/feiten/dossiers/testronde-specialisten/`) de canonieke plek, en werd een ronde
+> daar ook klaargezet. Die slotstap is bij **v11 én v12 overgeslagen**: het dossier staat sinds 1 augustus 2026
+> stil op *"v10 uitgevoerd, v11 staat klaar"*, terwijl beide rondes daarna volledig gedraaid en verwerkt zijn.
+> Het verslag van die twee staat wél compleet in hun eigen `tests/v11/` en `tests/v12/` — dus de historie was
+> niet weg, ze stond op een andere plek dan het protocol beweerde. In plaats van de administratie op twee
+> plekken te blijven bijhouden volgt het protocol nu de praktijk: **het verslag hoort bij de ronde**, en het
+> dossier is een **index** die per ronde doorverwijst (en het archief van v3 t/m v10 bewaart, want dat staat
+> alleen daar).
+>
+> Eén ding blijft dus wél naar `life-hub` gaan: **één indexregel per ronde** — nummer, datum, waartegen
+> gemeten, de link naar deze map en naar het overzichtsissue. Niet de uitkomst zelf.
 
 ## Repareer niets tijdens de ronde
 

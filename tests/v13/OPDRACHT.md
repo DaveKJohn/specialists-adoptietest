@@ -298,9 +298,10 @@ Schrijf dit over in het rapport, zodat de bron weet wat er **niet** gemeten is e
 ## Aan het eind
 
 Vul [`RESULTATEN.md`](RESULTATEN.md) in: de stappentabel naast die van v10, v11 en v12, de vier reparaties met
-per stuk **geverifieerd / niet gemeten / nog stuk**, en de gaps. Daarna de issues bij de bron, en dan de
-uitkomst in het dossier in `life-hub` — **die slotstap is bij v11 en v12 overgeslagen; zie de waarschuwing in
-[`README.md`](README.md).**
+per stuk **geverifieerd / niet gemeten / nog stuk**, en de gaps. Daarna de issues bij de bron. **Dat bestand
+hiernaast is het verslag** — sinds 2 augustus 2026 gaat er geen tweede versie van naar het dossier in
+`life-hub`; daar komt alleen één **indexregel** bij die hierheen wijst. Waarom dat zo is, staat in
+[`README.md`](README.md).
 
 **En zeg wat je met het profiel doet** — opruimen of laten staan is beide goed, maar een half opgeruimd
 profiel is voor de vólgende ronde geen nulstand meer.
