@@ -7,14 +7,14 @@ Wegwerp-consument voor de testrondes van de specialisten-plugin. Vers, leeg, gee
 **De opdracht staat niet in deze branch, en dat is bewust.** Deze branch is de *fixture*: hij moet leeg zijn,
 want stap 0 van elke ronde bewijst dat er niets is om correct over te zijn.
 
-De opdracht, de richtlijnen en het resultaatformulier van de huidige ronde staan op branch **`tests/v11`**, in
-de map `tests/v11/`. Begin bij `tests/v11/README.md`.
+De opdracht, de richtlijnen en het resultaatformulier van de huidige ronde staan op branch **`tests/v12`**, in
+de map `tests/v12/`. Begin bij `tests/v12/README.md`.
 
-**Lees ze in de browser, of clone die branch in een EIGEN map.** Doe géén `git checkout tests/v11` hier: dan
+**Lees ze in de browser, of clone die branch in een EIGEN map.** Doe géén `git checkout tests/v12` hier: dan
 staan de papieren in de repo die je aan het meten bent.
 
 ```
-git clone -b tests/v11 https://github.com/DaveKJohn/specialists-adoptietest.git v11-opdracht
+git clone -b tests/v12 https://github.com/DaveKJohn/specialists-adoptietest.git v12-opdracht
 ```
 
 > Deze sectie is de enige inhoudelijke toevoeging aan de fixture, en ze is opzettelijk kort en naamloos: geen
