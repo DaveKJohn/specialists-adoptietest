@@ -1,6 +1,7 @@
 # specialists-adoptietest
 
-Wegwerp-consument voor de testrondes van de specialisten-plugin. Vers, leeg, geen `.claude/`.
+Wegwerp-consument voor de testrondes van de specialisten-plugin. Op `main` staat alleen dit bestand — geen
+`.claude/`, geen `CLAUDE.md`. Alles wat een ronde daar bovenop zet is werkkopie en hoort aan het eind weer weg.
 
 ## Draai je hier een testronde?
 
@@ -18,5 +19,10 @@ git clone -b tests/v13 https://github.com/DaveKJohn/specialists-adoptietest.git 
 ```
 
 > Deze sectie is de enige inhoudelijke toevoeging aan de fixture, en ze is opzettelijk kort en naamloos: geen
-> specialist-id, geen specialistennaam, geen contract-functie. De vrij-staande audit van de teardown scant
-> `CLAUDE.md`, `.claude/**` en `scripts/**` — deze README valt daarbuiten en wordt alleen geteld als prose.
+> specialist-id, geen specialistennaam, geen contract-functie.
+>
+> **Wat de teardown met dit bestand doet, precies.** De vrij-staande audit scant `CLAUDE.md`, `.claude/**` en
+> `scripts/**`; deze README valt daarbuiten en kan dus nooit als werk-item opduiken. Daarnáást telt de
+> teardown proza in de root-markdown, en dáár zit dit bestand wél in — maar die telling blijft op **0** staan
+> en wordt alleen afgedrukt als ze groter is dan nul. Reden: de regel hierboven. **Zoek in de uitvoer dus geen
+> regel over deze README: dat er niets staat ís de uitslag.** Staat er wél iets, dan is dát de bevinding.
